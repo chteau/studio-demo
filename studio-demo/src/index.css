@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;800;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+    --font-sans: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+    --font-mono: "Space Grotesk", ui-monospace, SFMono-Regular, monospace;
+
+    --color-background: #0e0e0e;
+    --color-surface: #0e0e0e;
+    --color-primary: #d6b2fc;
+    --color-on-primary: #4c2e6d;
+    --color-secondary: #62fae3;
+    --color-surface-container: #191919;
+    --color-surface-container-low: #131313;
+    --color-surface-container-high: #1f1f1f;
+    --color-surface-container-highest: #262626;
+    --color-on-surface: #ffffff;
+    --color-on-surface-variant: #ababab;
+    --color-outline-variant: #484848;
+
+    --radius-none: 0px;
+}
+
+@layer base {
+    body {
+        @apply bg-background text-on-surface antialiased overflow-x-hidden;
+        font-family: var(--font-sans);
+    }
+}
+
+@layer utilities {
+    .glow-hover:hover {
+        box-shadow: 0 0 20px rgba(214, 178, 252, 0.4);
+    }
+
+    .grid-overlay {
+        background-image: radial-gradient(#484848 1px, transparent 1px);
+        background-size: 24px 24px;
+        opacity: 0.05;
+    }
+
+    .text-glow {
+        text-shadow: 0 0 10px rgba(214, 178, 252, 0.5);
+    }
+}
