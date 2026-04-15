@@ -56,4 +56,4 @@ Edit that file to customise the site without touching any component code.
 ## Credits
 
 - 3D model by [TomaszCGB](http://www.turbosquid.com/Search/Artists/TomaszCGB) via TurboSquid
-- Built by [@Cheeteau](https://github.com/Cheeteau)
+- Built by [@Cheeteau](https://github.com/chteau)
